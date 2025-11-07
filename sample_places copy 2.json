@@ -1,0 +1,7 @@
+[
+  {"name": "City Museum", "type": "museum", "price": 20, "rating": 4.5, "tags":["museum"], "lat":10.780, "lon":106.700, "trend_score":0.8},
+  {"name": "Central Park", "type": "park", "price": 0, "rating": 4.2, "tags":["park"], "lat":10.775, "lon":106.702, "trend_score":0.7},
+  {"name": "Art Gallery", "type": "museum", "price": 15, "rating": 4.0, "tags":["museum"], "lat":10.777, "lon":106.705, "trend_score":0.5},
+  {"name": "River Cruise", "type": "tour", "price": 30, "rating": 4.8, "tags":["boat"], "lat":10.778, "lon":106.708, "trend_score":0.9},
+  {"name": "Zoo", "type": "park", "price": 10, "rating": 4.1, "tags":["park"], "lat":10.772, "lon":106.701, "trend_score":0.6}
+]
