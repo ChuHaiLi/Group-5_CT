@@ -1,0 +1,55 @@
+1.Core Functionality: 
+Do all buttons, input fields, and links work?
+User Input: 
+Does the system correctly capture all user profile data (preferences, budget, etc.) for a session?
+Data Display: 
+Is all data from the static dataset (locations, guides) displayed correctly?
+Maps: 
+Does the map component load? 
+Are routes and distances calculated and displayed?
+Weather:
+Is the correct, real-time weather from the API displayed for a given location?
+Simulation Check: 
+Do the "booking" buttons trigger the correct simulated confirmation message ?
+Session State: 
+Does the system correctly reset when a new session begins ?
+
+2.Logic and Intelligent:
+Preference Matching: 
+If a user inputs "culture" and "low budget," does the system prioritize temples and street food over nightclubs and 5-star hotels?
+Exclusion: 
+Does the system successfully filter out locations that don't match ?
+Recommendation Ranking: 
+Is the #1 recommended item logically the best fit based on the combination of rules ?
+"Hot Trend" Simulation:
+Does the system correctly identify a location as a "hot trend" based on your team's defined threshold ?
+Route Optimization Logic:
+When 3+ points are selected, does the system generate a logical route ?
+Does the total travel time/cost calculation seem accurate based on the optimized path?
+Weather Alert: 
+If the weather data for a location shows "Rain," does the system correctly trigger an alert (e.g., "Heavy rain - suggest indoor activity")?
+Opportunity Alert:
+If the user's GPS is "near" a high-matching or "hot trend" location, does the "Opportunity Module" alert trigger?
+
+3. User Experience (UX) & Interface (UI)
+Clarity & Readability: 
+Is the text easy to read? Are icons clear?
+Ease of Use: 
+How easy is it to create a user profile and input preferences? 
+Is the process intuitive?
+Information Hierarchy: 
+Is the most important information (Name, Rating, Video) presented clearly on the recommendation list?
+Video Review Feature: 
+Is the integration of video reviews smooth? Does it add value as intended?
+Workflow: 
+Is the flow from planning (input) to recommendation (output) to itinerary (final plan) logical and smooth?
+
+4. Data Handling & Integration
+Static Dataset: 
+Is the 10-15 entry static dataset used fully? 
+Are you able to search, find, and get recommendations for all items in it?
+
+Test: Does a "Bad Weather" API response actively change the recommendation list to favor indoor activities?
+Test: Does the "Distance" from the Maps API actively influence the ranking of recommendations?
+Data Accuracy: 
+Are there obvious errors in how data is displayed (e.t., wrong name, wrong image, incorrect weather)? (Tolerated per your constraints, but should be noted).
