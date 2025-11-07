@@ -1,6 +1,7 @@
 """
 Smart Travel Project — Single-File Implementation
 
+
 This single Python module bundles:
 - Taxonomy (languages, currencies, countries, interests)
 - JSON Schemas (user profile, user query)
