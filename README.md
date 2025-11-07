@@ -1,0 +1,58 @@
+# **Nhóm 5 – Hệ Thống Gợi Ý Du Lịch Thông Minh**
+
+### **I. Problem Definition**
+**Xây dựng hệ thống gợi ý điểm đến phù hợp và tối ưu lộ trình du lịch dựa trên sở thích người dùng và dữ liệu sẵn có.**
+
+### **II. Decomposition**
+
+#### **Task 1 – Data Collection (Thiết Kế và Thu Thập Dữ Liệu Mô Phỏng)**  
+**Mục tiêu:** Chuẩn bị một bộ dữ liệu tĩnh (sample dataset) về các địa điểm, hoạt động và hướng dẫn viên.  
+**Mô tả ngắn gọn:** Xây dựng file dữ liệu (JSON hoặc CSV) chứa **10–15 địa điểm**, mỗi mục có các thuộc tính: *tên, loại, giá, rating, tags (thẻ), tọa độ*.
+
+---
+
+#### **Task 2 – User Analysis (Phân Tích và Mô Phỏng Đầu Vào Người Dùng)**  
+**Mục tiêu:** Thu thập và cấu trúc dữ liệu đầu vào từ người dùng như **sở thích, thời gian, ngân sách, vị trí GPS**.  
+**Mô tả ngắn gọn:** Thiết kế cấu trúc dữ liệu cho **hồ sơ người dùng** và **truy vấn tìm kiếm**, mô phỏng cách UI thu thập và gửi dữ liệu cho bộ xử lý logic.  
+
+---
+
+#### **Task 3 – Recommendation & Ranking (Xây Dựng Logic Xếp Hạng và Khuyến Nghị)**  
+**Mục tiêu:** Thiết kế **thuật toán rule-based** để gán trọng số và tính **điểm tổng hợp (composite score)** cho mỗi địa điểm.  
+**Mô tả ngắn gọn:** Xây dựng công thức tính điểm dựa trên **sở thích, khoảng cách, rating, độ “hot trend”**, sau đó lọc và hiển thị **3–5 kết quả hàng đầu**.  
+
+---
+
+#### **Task 4 – Route Optimization (Thiết Kế Thuật Toán Tối Ưu Hóa Lộ Trình)**  
+**Mục tiêu:** Áp dụng thuật toán **heuristic** (ví dụ: *Greedy* hoặc *Dijkstra*) để tìm tuyến đường hiệu quả nhất.  
+**Mô tả ngắn gọn:** Sắp xếp thứ tự các điểm đến được gợi ý, tính **tổng thời gian di chuyển** và **ước lượng chi phí vận chuyển** cho lộ trình tối ưu.  
+
+---
+
+#### **Task 5 – Decision Process & Output (Tích Hợp Quy Trình Quyết Định và Đầu Ra)**  
+**Mục tiêu:** Kết hợp kết quả từ các module **Ranking** và **Routing** để chọn tổ hợp điểm đến tối ưu.  
+**Mô tả ngắn gọn:** Module trung tâm chịu trách nhiệm tạo ra **“Danh sách Khuyến nghị Ưu tiên”** và **“Lộ trình Tối ưu Đa điểm”** dựa trên điểm số tổng hợp và thời gian di chuyển.  
+
+---
+
+#### **Task 6 – Smart Context & Insights (Phát Triển Cảnh Báo Ngữ Cảnh và Tính Năng Đặc Biệt)**  
+**Mục tiêu:** Mô phỏng các tính năng đặc biệt và **cảnh báo theo ngữ cảnh thời gian thực**.  
+**Mô tả ngắn gọn:** Thiết kế logic **IF–THEN** cho “Cảnh báo nhận biết ngữ cảnh” (ví dụ: *mưa → gợi ý hoạt động trong nhà*), đồng thời mô phỏng tính năng **“hot trend”** và **“thẻ giải thích” (Explainability Tags)**.  
+
+---
+
+#### **Task 7 – Look Back and Review (Đánh Giá, Kiểm Thử và Đề Xuất Cải Tiến)**  
+**Mục tiêu:** Đánh giá **độ chính xác và tính liên quan** của các gợi ý và lộ trình.  
+**Mô tả ngắn gọn:** Thực hiện kiểm thử để xem các gợi ý có phù hợp với hồ sơ người dùng không; xác định các điểm yếu (như **trọng số không cân bằng**) và đề xuất điều chỉnh để cải thiện hiệu suất.  
+
+
+### **III. Task allocation**
+|**Thành viên**|**MSSV**|**Vai trò / Nhiệm vụ chính**|
+|-|-|-|
+|**Lưu Chí Hải**|24127030|**Data Collection** – Thiết Kế và Thu Thập Dữ Liệu Mô Phỏng|
+|**Nguyễn Minh Khôi**|24127066|**Look Back and Review** – Đánh Giá, Kiểm Thử và Đề Xuất Cải Tiến|
+|**Trần Minh Triết**|24127573|**Recommendation & Ranking** – Xây Dựng Logic Xếp Hạng và Khuyến Nghị|
+|**Phạm Trần Đăng Khoa**|24127189|**Route Optimization** – Thiết Kế Thuật Toán Tối Ưu Hóa Lộ Trình|
+|**Ngô Quốc Tuấn**|24127581|**Smart Context & Insights** – Phát Triển Cảnh Báo Ngữ Cảnh và Tính Năng Đặc Biệt|
+|**Nguyễn Gia Quốc Uy**|24127261|**Decision Process & Output** – Tích Hợp Quy Trình Quyết Định và Đầu Ra|
+|**Nguyễn Quốc Thành**|24127542|**User Analysis** – Phân Tích và Mô Phỏng Đầu Vào Người Dùng|
